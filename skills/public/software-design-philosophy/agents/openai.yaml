@@ -1,0 +1,4 @@
+interface:
+  display_name: "Software Design Philosophy"
+  short_description: "Outlines, methodologies, and checklists for software design."
+  default_prompt: "Provide structured software design outputs (outline, methodology, checklist) based on user intent."
