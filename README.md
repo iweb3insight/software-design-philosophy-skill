@@ -10,6 +10,48 @@ Supported languages:
 - German
 - Portuguese
 
+## Installation
+
+### Claude / Claude Code (ZIP upload)
+```bash
+cd skills/public
+zip -r software-design-philosophy.zip software-design-philosophy
+```
+Then upload the ZIP in Claude: Customize > Skills.
+
+### OpenCode (project-local)
+```bash
+mkdir -p .opencode/skills
+cp -R skills/public/software-design-philosophy .opencode/skills/
+```
+
+### OpenCode (global)
+```bash
+mkdir -p ~/.config/opencode/skills
+cp -R skills/public/software-design-philosophy ~/.config/opencode/skills/
+```
+
+### Gemini CLI (user scope)
+```bash
+gemini skills link /path/to/skills/public
+```
+
+### Gemini CLI (workspace scope)
+```bash
+gemini skills link /path/to/skills/public --scope workspace
+```
+
+### Codex (generic fallback)
+```bash
+cp -R skills/public/software-design-philosophy /path/to/your/codex/skills/
+```
+
+## Supported Vibe Coding IDE/Agents
+- Claude Code
+- OpenCode
+- Gemini CLI
+- Codex
+
 ---
 
 <div align="center">
