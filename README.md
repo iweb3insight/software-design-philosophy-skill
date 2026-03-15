@@ -41,6 +41,12 @@ mkdir -p .opencode/skills
 cp -R skills/public/software-design-philosophy .opencode/skills/
 ```
 
+---
+
+<div align="center">
+  <img src="./assets/software-design-philosophy.png" width="480" />
+</div>
+
 ### OpenCode (global)
 ```bash
 mkdir -p ~/.config/opencode/skills
