@@ -1,14 +1,30 @@
 # Software Design Philosophy Skill
 
-A multi-language design skill that produces structured outputs for software design: outlines, actionable methodology steps, review checklists, and diagrams. The guiding ideas are inspired by the book *A Philosophy of Software Design*.
+A multi-language design skill that turns software design thinking into structured outputs: outlines, actionable steps, review checklists, and diagrams. The guiding ideas are inspired by the book *A Philosophy of Software Design*.
 
-Supported languages:
+## Quick Start (Vibe Coding Friendly)
+1. Ask for a design outline
+2. Ask for actionable methodology steps
+3. Ask for a review checklist
+
+Example prompts:
+- "Give a structured design outline for a chat app."
+- "Turn layering, modularity, and interface contracts into actionable steps."
+- "Give me a review checklist with action + tip."
+
+## Supported Languages
 - English (default)
 - Simplified Chinese
 - Traditional Chinese
 - French
 - German
 - Portuguese
+
+## Supported Vibe Coding IDE/Agents
+- Claude Code
+- OpenCode
+- Gemini CLI
+- Codex
 
 ## Installation
 
@@ -46,32 +62,18 @@ gemini skills link /path/to/skills/public --scope workspace
 cp -R skills/public/software-design-philosophy /path/to/your/codex/skills/
 ```
 
-## Supported Vibe Coding IDE/Agents
-- Claude Code
-- OpenCode
-- Gemini CLI
-- Codex
-
----
-
-<div align="center">
-  <img src="./assets/software-design-philosophy.png" width="640" />
-</div>
-
----
-
 ## Example: Chat System (Full)
 
 ### 1) Structured Outline
-**User**
+User:
 ```
 We are building an internal chat system. Provide a structured design outline for review.
 ```
 
-**Skill Route**
+Skill route:
 `references/outline.en.md`
 
-**Output**
+Output:
 ```
 Part 1: System goals and boundaries
 - Use cases and roles
@@ -95,18 +97,16 @@ Part 4: Reliability and scalability
 - Monitoring and alerting
 ```
 
----
-
 ### 2) Actionable Methodology
-**User**
+User:
 ```
 Turn layering, modularity, and interface contracts into actionable steps.
 ```
 
-**Skill Route**
+Skill route:
 `references/methodology.en.md`
 
-**Output**
+Output:
 ```
 Layering
 Principle: separate responsibilities and reduce coupling.
@@ -124,18 +124,16 @@ Method: define inputs/outputs/errors/idempotency; version contracts for evolutio
 Example: SendMessage supports idempotency key and status receipt.
 ```
 
----
-
 ### 3) Architecture Review Checklist
-**User**
+User:
 ```
 Give a chat-system architecture review checklist. Each item must include an action and a tip.
 ```
 
-**Skill Route**
+Skill route:
 `references/checklist.en.md`
 
-**Output**
+Output:
 ```
 1. Verify layer boundaries
 Action: check UI, app, and message services responsibilities.
@@ -150,18 +148,16 @@ Action: specify inputs, outputs, errors, and idempotency rules.
 Tip: document idempotency key creation and validation.
 ```
 
----
-
 ### 4) Combined Request
-**User**
+User:
 ```
 Prepare review materials: give a methodology summary first, then a checklist.
 ```
 
-**Skill Route**
+Skill route:
 `references/methodology.en.md` then `references/checklist.en.md`
 
-**Output**
+Output:
 ```
 Methodology summary
 - Clear layering with responsibility isolation
@@ -177,18 +173,16 @@ Action: assign responsibilities and dependencies.
 Tip: avoid circular dependencies.
 ```
 
----
-
 ### 5) Constraint Request
-**User**
+User:
 ```
 Only give layering guidance. Do not include a checklist.
 ```
 
-**Skill Route**
+Skill route:
 `references/methodology.en.md`
 
-**Output**
+Output:
 ```
 Layering
 Principle: separate responsibilities and reduce coupling.
