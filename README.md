@@ -1,6 +1,14 @@
 # Software Design Philosophy Skill
 
-A multi-language design skill that produces structured outputs for software design: outlines, actionable methodology steps, review checklists, and diagrams.
+A multi-language design skill that produces structured outputs for software design: outlines, actionable methodology steps, review checklists, and diagrams. The guiding ideas are inspired by the book *A Philosophy of Software Design*.
+
+---
+
+<div align="center">
+  <img src="./assets/software-design-philosophy.png" width="640" />
+</div>
+
+---
 
 ## Example: Chat System (Full)
 
