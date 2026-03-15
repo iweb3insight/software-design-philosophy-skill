@@ -2,6 +2,14 @@
 
 A multi-language design skill that produces structured outputs for software design: outlines, actionable methodology steps, review checklists, and diagrams. The guiding ideas are inspired by the book *A Philosophy of Software Design*.
 
+Supported languages:
+- English (default)
+- Simplified Chinese
+- Traditional Chinese
+- French
+- German
+- Portuguese
+
 ---
 
 <div align="center">
